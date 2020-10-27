@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+<script type="text/javascript">
+    function wrapOldContentByDiv() {
+        var oldContentDiv = document.createElement("div");
+        oldContentDiv.style.cssText = "float:right; width:72%; padding-left: 3%; padding-right:3%;border: 2px solid #CACACA;";
+        oldContentDiv.innerHTML = document.body.innerHTML;
+        document.body.style["max-width"] = "100%";
+        document.body.style["margin"] = "20px";
+        document.body.style["padding"] = "0";
+        document.body.innerHTML = '';
+        document.body.appendChild(oldContentDiv);
+    };
+
+    function addDirectorySwitch(directoryDiv) {
+        var directorySwitchP = document.createElement("p");
+        directorySwitchP.style.cssText = "text-align: left; margin: 0;";
+        directoryDiv.appendChild(directorySwitchP);
+
+        var ele_span = document.createElement("span");
+        ele_span.style.cssText = "font-weight: 1000;";
+        var ele_text = document.createTextNode("目录");
+        ele_span.appendChild(ele_text);
+
+        var ele_a = document.createElement("a");
+        ele_a.appendChild(document.createTextNode("[-]"));
+        ele_a.setAttribute("href", "#");
+        ele_a.setAttribute("onclick", "javascript:return switchAllDirectory(this);");
+        ele_a.setAttribute("title", "Click to Open TOC");
+
+        ele_span.appendChild(ele_a);
+        directorySwitchP.appendChild(ele_span);
+    }
+
+    function createTree(parentNode, tags, index, maxLevel) {
+        if (index >= tags.length) {
+            return -1;
+        }
+
+        var lastLevel = -1;
+        for (var i = index; i < tags.length; i++) {
+            var header = tags[i];
+            var level = parseInt(header.tagName.substr(1), 10);
+
+            var childNode = {'tag': header, 'childNodes': [], 'level': level};
+            if (level > parentNode.level) {
+                if (lastLevel > 0 && level > lastLevel) {
+                    // 子子类
+                    index = createTree(parentNode.childNodes[parentNode.childNodes.length - 1], tags, i);
+                    if (index < 0) {
+                        return -1;
+                    } else {
+                        i = index - 1;
+                    }
+                } else {
+                    parentNode.childNodes.push(childNode);
+                    lastLevel = level;
+                }
+            } else if (level <= maxLevel && parentNode.level > maxLevel) {
+                parentNode.childNodes.push(childNode);
+                lastLevel = level;
+            } else {
+                return i;
+            }
+        }
+    }
+
+    function createAElement(tag, index) {
+        var a = document.createElement("a");
+        a.style.cssText = "";
+        a.setAttribute("href", "#" + tag.textContent);
+        a.innerHTML = index.toString() + tag.textContent;
+        return a;
+    }
+
+    function createOlElement() {
+        var ol_el = document.createElement("ol");
+        ol_el.style["line-height"] = "180%";
+        ol_el.style["list-style-type"] = "none";
+        ol_el.style["margin-left"] = "0";
+        return ol_el
+    }
+
+    function createEmptyLiElement() {
+        var emptyLiEle = document.createElement("li");
+        return emptyLiEle
+    }
+
+    function getIndex(parentDirectory, directoryLevel, index) {
+        if (directoryLevel === 0) {
+            return parentDirectory + (index + 1).toString() + "."
+        } else {
+            return parentDirectory + (index + 1).toString() + ".";
+        }
+    }
+
+    function createLeafElement(node, curDirectory) {
+        var liEle = createEmptyLiElement();
+        var aEle = createAElement(node.tag, curDirectory);
+        liEle.appendChild(aEle);
+        return liEle
+    }
+
+    function getArrowDownStyle() {
+        return " width: 0;" +
+            "    height: 0;" +
+            "    position: relative;" +
+            "    margin-right: 8px;" +
+            "    top: 3px;" +
+            "    display: inline-block;" +
+            "    border: 6px outset;" +
+            "    border-color: black transparent transparent transparent;"
+    }
+
+    function getArrowRightStyle() {
+        return " width: 0;" +
+            "    height: 0;" +
+            "    left: 5px;" +
+            "    position: relative;" +
+            "    margin-right: 8px;" +
+            "    display: inline-block;" +
+            "    border: 6px solid;" +
+            "    border-color: transparent transparent transparent black;"
+    }
+
+    /*
+    <ol>
+        <li><a>根节点1</a></li>
+        <li><a>根节点2</a></li>
+        <li>
+            <div>
+                <a><span>[-]</span>根节点3</a>
+                <ol>
+                    <li><a>子节点1</a></li>
+                    <li><a>子节点2</a></li>
+                    <li><a>子节点3</a></li>
+                </ol>
+            </div>
+        </li>
+        <li><a>根节点4</a></li>
+     </ol>
+    * */
+    // node, 1.2.3 4 0
+    function renderTree(node, parentDirectory, directoryLevel, index) {
+        var childNodes = node.childNodes;
+        var tagContent = node.tag.textContent;
+
+        node.tag.setAttribute("id", tagContent);
+
+        var curDirectory = getIndex(parentDirectory, directoryLevel, index);
+        var directoryName = curDirectory + "&nbsp;" + tagContent;
+
+        // 叶子节点
+        if (childNodes.length === 0) {
+            return "<li style='padding-left: 24px;'><a href='#" + tagContent + "'>" + directoryName + "</a></li>"
+    //                return createLeafElement(node, curDirectory)
+        }
+
+        // 非叶子节点
+        var childContent = "";
+        for (var j = 0; j < node.childNodes.length; j++) {
+            childContent += renderTree(node.childNodes[j], curDirectory, directoryLevel + 1, j);
+        }
+
+        return "<li>" +
+            "   <div>" +
+            "      <div>" +
+            "         <div id='" + directoryName + "' class='open' style='" + getArrowDownStyle() + "' onclick='return switchDirectory(this);'></div>" +
+            "         <a href='#" + tagContent + "' ondblclick='return switchByDbClick(this);'>" + directoryName + "</a>" +
+            "      </div>" +
+            "      <ol id='ol-" + directoryName + "' style='line-height: 180%;list-style-type: none; padding-left: 20px;'>" + childContent + "</ol>" +
+            "   </div>" +
+            "</li>";
+
+        /*var liEle = createEmptyLiElement();
+        var aEle = createAElement(node.tag, curDirectory);
+
+        var parentElement = document.createElement("div");
+        parentElement.appendChild(aEle);
+
+        var olElement = createOlElement();
+
+        var tempNode;
+        for (var j = 0; j < node.childNodes.length; j++) {
+            tempNode = node.childNodes[j];
+            var element = renderTree(tempNode, curDirectory, directoryLevel + 1, j);
+            olElement.appendChild(element);
+        }
+        parentElement.appendChild(olElement);
+
+        liEle.appendChild(parentElement);
+        return liEle;*/
+    }
+
+    function switchByDbClick(aEle) {
+        switchDirectory(aEle.parentElement().firstChild)
+    }
+
+    // 开关目录
+    function switchDirectory(ele) {
+        var divEle = ele.parentNode.parentNode;
+        var olEle = divEle.lastElementChild;
+        if (ele.className === "open") {
+            // 关闭
+            olEle.style.cssText = "display:none;line-height: 180%;list-style-type: none; padding-left: 20px";
+            ele.setAttribute("class", "close");
+            ele.style.cssText = getArrowRightStyle();
+        } else if (ele.className === "close") {
+            // 打开
+            olEle.style.cssText = "line-height: 180%;list-style-type: none; padding-left: 20px";
+            ele.setAttribute("class", "open");
+            ele.style.cssText = getArrowDownStyle();
+        }
+    }
+
+    function switchAllDirectory(e) {
+        var rootOlElement = document.getElementById("outline_ol");
+        var ols = rootOlElement.getElementsByTagName("ol");
+        var isOpen = false;
+
+        if (e.innerHTML === '[+]') {
+            e.setAttribute('title', 'collapse');
+            e.innerHTML = '[-]';
+            isOpen = true;
+        } else {
+            e.setAttribute('title', 'expand');
+            e.innerHTML = '[+]';
+        }
+
+
+        for (var i = 0; i < ols.length; i++) {
+            var olEle = ols[i];
+            if (isOpen) {
+                olEle.style.display = "block";
+                olEle.parentNode.firstElementChild.firstElementChild.style.cssText = getArrowDownStyle();
+            } else {
+                olEle.style.display = "none";
+                olEle.parentNode.firstElementChild.firstElementChild.style.cssText = getArrowRightStyle();
+            }
+        }
+
+        e.blur();
+        return false;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        // 1, 将body内容提取到div标签中
+        wrapOldContentByDiv();
+
+        // 2, 创建左边目录列表Div
+        var directoryDiv = document.createElement("div");
+        directoryDiv.setAttribute("id", "outline-list");
+        directoryDiv.style.cssText = "width:20%;height:100%; float:left;font-size:16px,z-index:1;position: fixed;overflow: hidden;";
+
+        // 3, 目录展开折叠开关
+        addDirectorySwitch(directoryDiv);
+
+        // 4, 创建目录列表
+        var directoryOl = document.createElement("ol");
+        directoryOl.style.cssText = "padding-left:14px;line-height:180%;list-style-type:none;height: 85%;padding-bottom: 30px; overflow: auto;";
+        directoryOl.setAttribute("id", "outline_ol");
+        directoryDiv.appendChild(directoryOl);
+        var div1 = document.createElement("div");
+        div1.style.cssText = "clear:both";
+
+        // 插入目录
+        document.body.insertBefore(directoryDiv, document.body.childNodes[0]);
+
+        // 5, 获取所有的H标签
+        var hTags = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+        if (hTags.length < 2)
+            return;
+
+        var rootNode = {'tag': directoryOl, 'childNodes': [], 'level': 0};
+        var maxLevel = parseInt(hTags[0].tagName.substr(1), 10);
+        // 6, 创建树形结构
+        createTree(rootNode, hTags, 0, maxLevel);
+
+        // 7, 绘制树结构
+        var htmlContent = "";
+        for (var j = 0; j < rootNode.childNodes.length; j++) {
+    //                var element = renderTree(rootNode.childNodes[j], '', 1, j);
+    //                directoryOl.appendChild(element);
+
+            htmlContent += renderTree(rootNode.childNodes[j], '', 1, j);
+        }
+        directoryOl.innerHTML = htmlContent;
+    });
+</script>
+</head>
+<body>
+<p><br/><center><strong><font size=6.5>关于“进销存管理系统”的测试报告</font></strong></center>
+<center><strong><font size=5>（1716040503 李泳玉）</font></strong></center>
+<br/></p>
+<hr />
+<h1>简述</h1>
+<p><font size=4>
+&emsp;&emsp;本次测试主要用到的源代码文件有：</p>
+<p><font size=4>
+&emsp;&emsp;①TestCase.py；②Example.py； ③MyCommonLib.py；④TestCaseHtmlRunner.py；	⑤HTMLTestRunner.py，并生成了测试结果HTML文件：report.html等。</p>
+<p><font size=4>
+&emsp;&emsp;主要测试网站的登陆以及增删查改功能等等，一共15个测试用例。后续将会一一介绍测试过程，在介绍中重复的步骤将不再赘述，在测试中都使用了try方法跳过异常继续关闭浏览器。
+<br/></p>
+<hr />
+<h1>测试过程</h1>
+<h2>测试用例 （TestCase.py）</h2>
+<h3>开始测试用例前的准备工作</h3>
+<p>&emsp;&emsp;在此可编写测试用例执行前需运行的代码。</p>
+<pre><code>def setUp(self):
+    print(&quot;===== Start =====&quot;)
+    # 去除警告提示
+    warnings.simplefilter('ignore', ResourceWarning)
+</code></pre>
+
+<p><br/></p>
+<h3>结束测试用例后的收尾清理工作</h3>
+<p>&emsp;&emsp;在此可编写测试用例执行完毕需运行的代码，比如关闭网页等。</p>
+<pre><code>def tearDown(self):
+    print(&quot;====== End ======&quot;)
+</code></pre>
+
+<p><br/></p>
+<h3>登陆网站的测试用例</h3>
+<p>&emsp;&emsp;在输入账号和密码正常登陆的情况下，登陆之后获取账号名之前的共有字符串“Welcome”进行比较，如果获取到且一致则通过，否则断言失败。</p>
+<pre><code>def test_001(self):
+    print(&quot;测试是否登陆成功&quot;)
+    log = Public()
+    try:
+        log.login('admin8',&quot;admin&quot;)
+        # 获取用户名前缀'Welcome'
+        data = str(log.get_text('xpath','//div[@class=&quot;right_header&quot;]')).split(&quot; &quot;)[0]
+        # 断言判断是否登录成功
+        self.assertEqual('Welcome',data,msg=&quot;登录未成功&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>不输入账号或密码的反向测试</h3>
+<p>&emsp;&emsp;在仅输入账号或密码的非正常登陆情况下，也尝试获取账号名之前的共有字符串“Welcome”进行比较，获取不到元素则通过已封装好的xsdd()方法返回字符“F”，否则返回“T”，然后与预设值进行比较。</p>
+<pre><code># 反向测试
+# # 只输入账号的情况
+def test_002(self):
+    print(&quot;测试不输入账号的情况&quot;)
+    log = Public()
+    try:
+        log.login('', &quot;admin&quot;)
+        self.assertEqual(&quot;F&quot;, log.xsdd('//div[@class=&quot;right_header&quot;]'), msg=&quot;已输入账号！&quot;)
+    finally:
+        log.quit()
+
+# # 只输入密码的情况
+def test_003(self):
+    print(&quot;测试不输入密码的情况&quot;)
+    log = Public()
+    try:
+        log.login('admin8', &quot;&quot;)
+        self.assertNotEqual(&quot;T&quot;, log.xsdd('//div[@class=&quot;right_header&quot;]'), msg=&quot;已输入密码！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试订购产品功能</h3>
+<p>&emsp;&emsp;通过封装的public函数(该函数用于登陆、点击左边目录及子菜单)进行登陆以及子菜单点击；运用封装的time_remark()函数输入时间、备注。然后提交添加。如结果与预设值“添加订单成功”一致则通过。</p>
+<pre><code>def test_004(self):
+    print(&quot;测试订购产品&quot;)
+    log = Public()
+    try:
+        log.public('0h', '订购产品', 'admin8', 'admin')
+        #输入内容
+        log.public2('1','3','2','1','5')
+        log.time_remark('orderTime','test')
+        #提交
+        log.click('xpath', '//input[@id=&quot;button&quot;]')
+        data = log.get_text('css','body &gt; div:nth-child(1)')
+        self.assertEqual('添加订单成功', data, msg=&quot;订购产品不成功&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试库存查询功能</h3>
+<p>&emsp;&emsp;使用Select操作包的options()函数获取下拉框的条目数，使用random函数生成随机索引进行下拉框的随机选择，之后点击查询。按照表格是否出现第六行来断言，有则通过，否则断言失败。</p>
+<pre><code>def test_005(self):
+    print(&quot;测试库存查询&quot;)
+    log = Public()
+    try:
+        log.public('2h','库存查询','admin8', 'admin')
+        #选择搜素站点
+        scobj = Select(log.locateElement('id', 'sName'))
+        time.sleep(2)
+        scobj.select_by_index(random.randint(0,len(scobj.options)))
+        log.click('xpath','//input[@value=&quot;查询&quot;]')
+        self.assertEqual(&quot;T&quot;, log.xsdd('//*[@id=&quot;rounded-corner&quot;]/tbody/tr[6]'), msg=&quot;查询无结果！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试添加网点功能</h3>
+<p>&emsp;&emsp;只有输入、点击，不再赘述。本测试主要源代码如下：</p>
+<pre><code>def test_006(self):
+    print(&quot;测试添加网点&quot;)
+    log = Public()
+    try:
+        log.public('2h', '网点管理', 'admin8', 'admin')
+        log.click('xpath','//*[@id=&quot;rounded-corner&quot;]/tbody/tr[2]/td/a')
+        #要添加的网点名称
+        str1 = 'ytest'
+        log.input_data('name','shopName',str1)
+        log.input_data('name','shopBz','ytestm')
+        log.click('name','button1')
+        self.assertIn(str1 , log.list1('//*[@id=&quot;rounded-corner&quot;]/tbody/tr/td[2]') ,msg=&quot;添加网点失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试产品出库功能</h3>
+<p>&emsp;&emsp;使用Select操作包的options()函数获取下拉框的条目数，使用random函数生成随机索引进行下拉框的随机选择出库网点，之后输入数量、日期以及备注，最后点击提交出库。</p>
+<pre><code>def test_007(self):
+    print(&quot;测试产品出库&quot;)
+    log = Public()
+    try:
+        log.public('3h', '产品出库', 'admin8', 'admin')
+        scobj = Select(log.locateElement('name', 'shopid'))
+        time.sleep(2)
+        scobj.select_by_index(random.randint(0, len(scobj.options)))
+        # 输入内容
+        log.public2('1', '3', '2', '1', '5')
+        log.time_remark('outtime','test')
+        # 提交
+        log.click('xpath', '//input[@value=&quot;确认出库&quot;]')
+        data = log.get_text('css', 'body')
+        self.assertEqual('产品出库成功', data, msg=&quot;产品出库失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试入库记录查询功能</h3>
+<p>&emsp;&emsp;使用封装好的日期计算功能函数生成日期进行日期的输入，然后查询，查看列表是否有数据，有则通过，否则断言失败。</p>
+<pre><code>def test_008(self):
+    print(&quot;测试入库记录查询&quot;)
+    log = Public()
+    try:
+        log.public('1h', '入库记录查询', 'admin8', 'admin')
+        #对当前时间日期的增减
+        time1 = log.time2('-2')
+        time2 = log.time2('+3')
+        log.input_data('name','starttime',time1)
+        log.input_data('name','endtime',time2)
+        # 提交
+        log.click('xpath', '//input[@value=&quot;查询&quot;]')
+        #查询列表
+        self.assertNotEqual('[]', log.list1('//*[@id=&quot;rounded-corner&quot;]/tbody/tr'),msg=&quot;入库记录查询失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试添加员工功能</h3>
+<p>&emsp;&emsp;使用封装好的public3()功能函数（该功能主要传入参数值进行输入）进行数据输入，然后点击提交，确认是否成功，成功则通过。</p>
+<pre><code>def test_009(self):
+    print(&quot;测试添加员工&quot;)
+    log = Public()
+    try:
+        log.public('4h', '添加员工', 'admin8', 'admin')
+        log.public3(name='小明1',phone='1008610000',address='guangxi',birthday='2020-10-20',price='10000',note='test')
+        #选择性别
+        log.click('xpath','//input[@id=&quot;sex0&quot;]')
+        #确认
+        log.click('xpath', '//input[@name=&quot;button&quot;]')
+        data = log.get_text('css', 'body')
+        self.assertEqual('成功', data, msg=&quot;添加员工失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试删除员工功能</h3>
+<p>&emsp;&emsp;先通过封装的list1列表获取功能函数去获取需要删除的字段值（比如员工姓名）所在位置，然后通过该位置的表格的tr值拼接出删除链接存入列表str2进行循环删除。删除之后再次获取列表是否还有该值，没有则通过。</p>
+<pre><code>def test_010(self):
+    print(&quot;测试删除员工&quot;)
+    log = Public()
+    try:
+        log.public('4h', '员工管理', 'admin8', 'admin')
+        # 通过定位获取要删除的对象在列表的第几个进行拼接语句删除
+        str1 = '小明1'
+        str2 = []
+        res = log.list1('//*[@id=&quot;rounded-corner&quot;]/tbody/tr/td[1]')
+        for i in range(0,len(res)):
+            if res[i] == str1:
+                str2.append('//*[@id=&quot;rounded-corner&quot;]/tbody/tr[' + str(i+2) + ']/td[7]/a')
+        for i in str2:
+            log.click('xpath',i)
+            log.click('xpath','//span[@class=&quot;yes&quot;]')
+            self.assertNotIn(str1, log.list1('//*[@id=&quot;rounded-corner&quot;]/tbody/tr/td[1]'),msg=&quot;删除员工失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试新增客户功能</h3>
+<p>&emsp;&emsp;参考添加员工功能。本测试主要源代码如下：</p>
+<pre><code>def test_011(self):
+    print(&quot;测试新增客户&quot;)
+    log = Public()
+    try:
+        log.public('5h', '客户管理', 'admin8', 'admin')
+        log.click('xpath','//*[@id=&quot;rounded-corner&quot;]/tbody/tr[2]/td/a')
+        str1 = '小李'
+        log.public3(name=str1,phone='10086',address='gx',remark='test')
+        log.click('xpath', '//input[@value=&quot;确认添加&quot;]')
+        self.assertIn(str1, log.list1('/html/body/table/tbody/tr/td[1]'), msg=&quot;新增客户失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试编辑客户信息功能</h3>
+<p>&emsp;&emsp;与删除员工的测试用例类似，先获取操作对象的列表再拼接出编辑的链接入口进行点击。将编辑前用list1功能函数获取的列表与编辑后获取的列表比较，不一致则测试通过。</p>
+<pre><code>def test_012(self):
+    print(&quot;测试编辑客户信息&quot;)
+    log = Public()
+    try:
+        log.public('5h', '客户管理', 'admin8', 'admin')
+        str1 = '小李'
+        str2 = []
+        res = log.list1('/html/body/table/tbody/tr/td[1]')
+        for i in range(0, len(res)):
+            if res[i] == str1:
+                str2.append('/html/body/table/tbody/tr[' + str(i + 2) + ']')
+        for i in str2:
+            log.click('xpath',i + '/td[5]/a')
+            s1 = log.list1(i)
+            log.public3(phone='10000',remark='y修改了')
+            log.click('xpath', '//input[@value=&quot;确认修改&quot;]')
+            s2 = log.list1(i)
+            self.assertIsNot(s1, s2, msg=&quot;修改客户信息失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试删除客户功能</h3>
+<p>&emsp;&emsp;与删除员工的测试用例类似，不再赘述。</p>
+<pre><code>def test_013(self):
+    print(&quot;测试删除客户&quot;)
+    log = Public()
+    try:
+        log.public('5h', '客户管理', 'admin8', 'admin')
+        str1 = '小李'
+        str2 = []
+        res = log.list1('/html/body/table/tbody/tr/td[1]')
+        for i in range(0,len(res)):
+            if res[i] == str1:
+                str2.append('/html/body/table/tbody/tr[' + str(i+2) + ']/td[6]')
+        for i in str2:
+            log.click('xpath',i)
+            log.click('xpath','//span[@class=&quot;yes&quot;]')
+            self.assertNotIn(str1, log.list1('/html/body/table/tbody/tr/td[1]'), msg=&quot;删除客户失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试添加管理员功能</h3>
+<p>&emsp;&emsp;管理员的用户名有唯一性，输入的用户名不能与已有的相同，其余的测试过程与添加员工的测试类似。</p>
+<pre><code>def test_014(self):
+    print(&quot;测试添加管理员&quot;)
+    log = Public()
+    try:
+        log.public('6h', '添加管理员', 'admin8', 'admin')
+        # 注：用户名不可与已有的重复
+        log.public3(account='小明C',password='10010',password2='10010',name='admin',note='test')
+        log.click('xpath', '//input[@value=&quot;确认添加&quot;]')
+        self.assertEqual('成功', log.get_text('xpath','/html/body'), msg=&quot;新增客户失败！&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<h3>测试产品入库功能</h3>
+<p>&emsp;&emsp;因外键原因，需通过封装好的time2()计算日期函数（该功能是对当前日期进行增减）进行日期的增减后输入及选择状态后查询订单记录，再使用封装的list1()功能函数获取订单记录的订单编号；然后进入产品入库页面，使用random()函数按此前的列表长度随机选择订单编号输入，然后输入入库时间和备注提交。
+&emsp;&emsp;注：因产品入库需引用订单编号，而订单记录查询的搜索功能不稳定，查无结果，所以测试中使用 @unittest.skip() 函数跳过测试。</p>
+<pre><code>@unittest.skip(&quot;因产品入库需引用订单编号，而订单记录查询的搜索功能不稳定，查无结果，跳过测试&quot;)
+def test_015(self):
+    print(&quot;测试产品入库&quot;)
+    log = Public()
+    try:
+        log.public('0h', '订单记录查询', 'admin8', 'admin')
+        time1 = log.time2('-1')
+        time2 = log.time2('+1')
+        log.input_data('name', 'starttime', time1)
+        log.input_data('name', 'endtime', time2)
+        # 选择订单状态
+        scobj = Select(log.locateElement('name', 'orderstate'))
+        time.sleep(1)
+        scobj.select_by_index(random.randint(0, len(scobj.options)))
+        # 查询
+        log.click('xpath', '//input[@value=&quot;查询&quot;]')
+        # 查询订单编号列表
+        res = log.list1('/html/body/table/tbody/tr/td[1]')
+
+        log.stdc()
+        log.public('1h', '产品入库')
+        num = random.randint(0,len(res))
+        log.input_data('name', 'orderid',res[num])
+        log.time_remark('intime','')
+        log.stdc()
+        log.stf(&quot;mainiFrame&quot;)
+        log.input_data('name', 'remark', 'test')
+        # 提交
+        log.click('xpath', '//input[@name=&quot;button1&quot;]')
+        data = log.get_text('css', 'body &gt; div')
+        self.assertEqual('成功入库', data, msg=&quot;失败,请检查订单编号是否有效或者是否已经入库&quot;)
+    finally:
+        log.quit()
+</code></pre>
+
+<p><br/></p>
+<hr />
+<h2>重复代码再封装 （Example.py）</h2>
+<p>from  LyyPackage.MyCommonLib import CommonShare</p>
+<p>import time</p>
+<p>class Public(CommonShare):</p>
+<pre><code>#登陆函数
+def login(self,user,pwd):
+    self.open_url(&quot;http://wewopa.natapp4.cc/jinxiaocun/login.do&quot;)
+    self.input_data('xpath','//input[@name=&quot;account&quot;]',user)
+    self.input_data('xpath','//input[@name=&quot;password&quot;]',pwd)
+    #点击登录
+    self.click('xpath','//input[@value=&quot;登陆&quot;]')
+
+#登陆、点击子菜单函数
+def public(self,*args):
+    if len(args[2]) != 0 and len(args[3]) != 0:
+        self.login(args[2],args[3])
+    # 点击子菜单
+    str3 = '//a[@headerindex=&quot;' + args[0] + '&quot;]'
+    self.click('xpath', str3)
+    self.click('text', args[1])
+    # 进子窗口
+    self.stf(&quot;mainiFrame&quot;)
+
+# 定位方式为name的是数字的定位输入函数（列表）
+def public2(self,*args):
+    for i in range(0,len(args)):
+        self.input_data('name', str(i+1), args[i])
+
+# 定位方式为name的是数字以外的定位输入函数（字典）
+def public3(self,**args):
+    for k,v in args.items():
+        self.input_data('name', k, v)
+
+# 选择时间和输入备注
+def time_remark(self,str1,remark):
+    #点击时间输入框
+    self.click('name', str1)
+    # 返回顶层窗口
+    self.stdc()
+    # 进入时间子窗口
+    ele = self.locateElement('css', &quot;body &gt; div:nth-child(3) &gt; iframe&quot;)
+    self.stf(ele)
+    # 点选今天时间
+    self.click('id', 'dpTodayInput')
+    #判断有无备注内容传入，有则输入
+    if len(remark) != 0:
+        self.stdc()
+        self.stf(&quot;mainiFrame&quot;)
+        self.input_data('name', 'remark', remark)
+
+# 月份定天数，然后修改时间
+def time2(self,n):
+    times = time.strftime(&quot;%Y-%m-%d&quot;, time.localtime())
+    month = int(times[-5:-3])
+    if month == 2:
+        if int(times[:3]) % 4 == 0 and int(times[:3]) % 100 != 0 or int(times[:3]) % 400 == 0:
+            m = 29
+        else:
+            m = 28
+    elif month == 4 or month == 6 or month == 9 or month == 11:
+        m = 30
+    else:
+        m = 31
+    str1 = ''
+    if int(times[-2:]) &lt; m:
+        for i in range(1, int(n[1]) + 1):
+            if n[0] == '-' and int(times[-2:]) &gt; 0:
+                str1 = str(int(times[-2:]) - i)
+            else:
+                str1 = str(int(times[-2:]) + i)
+            if int(str1) &gt;= m:
+                break
+    return (str(times[:-2]) + str1)
+
+# 获取页面的列表集合
+def list1(self,str1):
+    #根据参数获取列表
+    res1 = self.locateElement('xpaths', str1)
+    res = []
+    for i in range(1, len(res1)):
+        res.append(res1[i].text)
+    return res
+
+def quit(self):
+    self.driver.quit()
+</code></pre>
+
+<p><br/></p>
+<hr />
+<h2>功能封装MyCommonLib.py</h2>
+<p>from selenium import webdriver</p>
+<p>import time</p>
+<p>from selenium.webdriver.common.action_chains import ActionChains</p>
+<p>from  selenium.webdriver.common.by import By</p>
+<p>from selenium.webdriver.support.ui import WebDriverWait</p>
+<p>from selenium.webdriver.support import expected_conditions as EC</p>
+<p>class CommonShare(object):</p>
+<pre><code># 构造函数 初始化
+def __init__(self):
+    #创建浏览器
+    self.driver = webdriver.Firefox()
+    #将浏览器最大化
+    self.driver.maximize_window()
+    pass
+# 打开一个网页
+def open_url(self,url):
+    self.driver.get(url)
+    #设置隐式等待
+    self.driver.implicitly_wait(10)
+    pass
+
+# 封装定位
+def locateElement(self,locate_type,value):
+    el = None
+    if locate_type == 'id':
+        el = self.driver.find_element_by_id(value)
+    elif  locate_type ==&quot;name&quot;:
+        el = self.driver.find_element_by_name(value)
+    elif locate_type == &quot;class&quot;:
+        el = self.driver.find_element_by_class_name(value)
+    elif locate_type == &quot;text&quot;:
+        el = self.driver.find_element_by_link_text(value)
+    elif locate_type == &quot;xpath&quot;:
+        el = self.driver.find_element_by_xpath(value)
+    elif locate_type == &quot;xpaths&quot;:
+        el = self.driver.find_elements_by_xpath(value)
+    elif locate_type == &quot;css&quot;:
+        el = self.driver.find_element_by_css_selector(value)
+
+    if el is not None:
+        return el
+
+#  封装点击函数
+def click(self,locate_type,value):
+    el = self.locateElement(locate_type,value)
+    el.click()
+    time.sleep(1)
+
+ # 封装输入函数
+def input_data(self,locate_type,value,data):
+    el = self.locateElement(locate_type, value)
+    #清空对象的内容
+    el.clear()
+    el.send_keys(data)
+    time.sleep(1)
+
+# 先点击 后输入
+def actionChain(self,locate_type,value,data):
+    el = self.locateElement(locate_type, value)
+    #清除内容
+    el.clear()
+    # 模拟鼠标事件 先点击 后输入
+    ActionChains(self.driver).click(el).send_keys(data).perform()
+    time.sleep(2)
+
+# 判断异常，有异常返回“F”，否则返回“T”
+def catch(self,value):
+    try:
+        value
+    except Exception:
+        return &quot;F&quot;
+    else:
+        return &quot;T&quot;
+        pass
+    finally:
+        self.driver.quit()
+
+# 获取链接文本
+def get_text(self,locate_type,value):
+    el = self.locateElement(locate_type, value)
+    return el.text
+
+# 进入iframe子窗口
+def stf(self,str):
+    self.driver.switch_to.frame(str)
+
+# 返回顶层窗口
+def stdc(self):
+    self.driver.switch_to.default_content()
+
+#切换标签
+def stw(self,str1,num):
+    self.driver.find_element_by_tag_name('body').send_keys(str1)
+    self.driver.switch_to.window(self.driver.window_handles[num])
+
+# 显式等待异常函数
+def xsdd(self,str1):
+    try:
+        # 1秒内每隔0.2秒去定位，超时或超时定位不到就报异常
+        WebDriverWait(self.driver, 1, 0.1).until(EC.presence_of_all_elements_located((By.XPATH, str1)))
+    except Exception:
+        return &quot;F&quot;
+    else:
+        return &quot;T&quot;
+    finally:
+        self.driver.quit()
+</code></pre>
+
+<p><br/></p>
+<hr />
+<h1>总结</h1>
+<p>&emsp;&emsp;经过这么多天的课程学习，让我了解到了软件测试的必要性，通过软件测试可以让我们尽早的发现程序错漏并修补，对于企业而言，这是关乎企业利益及名声的层面，倘若软件程序不经过丝毫不差的千次万次测试就上线使用，一旦程序的漏洞被不法分子利用，小则动摇企业的财产，重则也可能令企业破产、面临法律问题。在学习中，我学会了selenium这个测试模块的一些使用方法，相对于此前，增进了Python知识，学会断言功能的使用。掌握了更好的学习方法，只要兴趣来了比什么死记硬背的方法都管用。
+<br/></p>
+<hr />
+<p><br/></p>
+
+</body>
+</html>
